@@ -1,0 +1,409 @@
+[
+  {
+    "id": 1,
+    "context": "Sinh viên xem điểm trên hệ thống thấy thấp hơn dự tính rất nhiều",
+    "intent": "Bày tỏ sự ngạc nhiên và xin được xem lại bài thi để kiểm tra lỗi",
+    "slang_mapping": {
+      "thay oi": "Thưa thầy",
+      "hinh nhu": "dường như",
+      "bi nham": "bị nhầm lẫn",
+      "dc": "được",
+      "ma": "nhưng mà"
+    },
+    "input": "thay oi hinh nhu diem e bi nham hay sao a, e tinh dc 8 ma tren web co 5, thay coi lai giup e vs",
+    "reasoning": "Input dùng từ ngữ nghi vấn nhưng thiếu chủ ngữ và viết tắt nhiều. Cần chuyển thành câu trần thuật trang trọng, nêu rõ vấn đề chênh lệch điểm số và đề nghị giảng viên rà soát lại.",
+    "target": "Em chào Thầy, em vừa xem điểm trên hệ thống và thấy có sự chênh lệch lớn so với kết quả em tự tính (5 điểm so với 8 điểm). Em mong Thầy kiểm tra lại giúp em xem có sai sót gì trong quá trình nhập liệu không ạ."
+  },
+  {
+    "id": 2,
+    "context": "Sinh viên phát hiện giảng viên cộng sót điểm thành phần",
+    "intent": "Chỉ ra lỗi cộng điểm cụ thể và xin điều chỉnh",
+    "slang_mapping": {
+      "cong thieu": "cộng thiếu",
+      "cau 2": "câu số 2",
+      "r": "rồi",
+      "thay check": "nhờ Thầy kiểm tra"
+    },
+    "input": "thay cong thieu diem cau 2 cho e r, cau do e lam dung ma k thay diem dau, thay check lai di a",
+    "reasoning": "Input có giọng điệu hơi trách móc ('thầy check lại đi'). Cần chuyển sang giọng điệu cung cấp thông tin khách quan về việc thiếu điểm và nhờ xác minh lại.",
+    "target": "Thưa Thầy, em đã xem lại bài làm và nhận thấy phần điểm của câu 2 dường như chưa được cộng vào tổng điểm. Kính mong Thầy xem xét lại giúp em ạ."
+  },
+  {
+    "id": 3,
+    "context": "Sinh viên làm bài trắc nghiệm nhưng nghi ngờ máy chấm sai",
+    "intent": "Nghi ngờ lỗi kỹ thuật khi chấm máy và xin chấm thủ công",
+    "slang_mapping": {
+      "may cham": "máy chấm thi",
+      "k": "không",
+      "dung het": "đúng hết",
+      "vs": "với"
+    },
+    "input": "thay oi bai trac nghiem cua e may cham sai hay sao y, e do dap an dung het ma dc co 4d, thay cham tay lai ho e vs",
+    "reasoning": "Cụm từ 'máy chấm sai hay sao ý' và 'hộ em vs' thiếu sự trang trọng học thuật. Cần diễn đạt lại thành yêu cầu phúc khảo do nghi ngờ có lỗi kỹ thuật khách quan.",
+    "target": "Em chào Thầy, sau khi đối chiếu với đáp án, em thấy điểm số bài trắc nghiệm của mình thấp hơn thực tế khá nhiều. Em xin phép đề nghị Thầy chấm lại bài của em theo phương pháp thủ công để đảm bảo tính chính xác ạ."
+  },
+  {
+    "id": 4,
+    "context": "Sinh viên thắc mắc về đáp án của một câu hỏi cụ thể",
+    "intent": "Tranh luận nhẹ nhàng về đáp án và mong được giải thích",
+    "slang_mapping": {
+      "ky vay": "kỳ lạ vậy",
+      "sach": "giáo trình",
+      "khac ma": "khác mà",
+      "thay giai thich": "Thầy giải thích"
+    },
+    "input": "dap an cau 5 ky vay thay, trong sach ghi khac ma, sao e lam y chang lai bi gach, thay giai thich e hieu vs",
+    "reasoning": "Cách dùng từ 'kỳ vậy', 'bị gạch' mang tính chất văn nói đường phố. Cần chuyển thành câu hỏi mang tính học thuật, dẫn chứng nguồn tài liệu (giáo trình) để làm cơ sở cho thắc mắc.",
+    "target": "Thưa Thầy, về câu hỏi số 5, em nhận thấy nội dung em trả lời bám sát theo giáo trình. Em mong Thầy có thể giải đáp giúp em vì sao phần này chưa được ghi nhận điểm tối đa ạ."
+  },
+  {
+    "id": 5,
+    "context": "Sinh viên không biết quy trình phúc khảo chính thức",
+    "intent": "Hỏi về thủ tục và thời hạn nộp đơn phúc khảo",
+    "slang_mapping": {
+      "h": "giờ",
+      "muon phuc khao": "muốn xin phúc khảo",
+      "nop o dau": "nộp đơn ở đâu",
+      "gap": "gấp"
+    },
+    "input": "thay oi h e muon phuc khao thi nop o dau a, e can gap lam, chi e vs",
+    "reasoning": "Câu hỏi quá cụt lủn và hối thúc ('cần gấp lắm'). Cần viết lại thành câu hỏi lịch sự về quy trình hành chính và thời gian biểu.",
+    "target": "Em chào Thầy, Thầy cho em hỏi về quy trình phúc khảo bài thi kết thúc học phần ạ. Em cần nộp đơn ở văn phòng khoa hay gửi trực tiếp cho Thầy, và hạn chót là khi nào ạ?"
+  },
+  {
+    "id": 6,
+    "context": "Sinh viên bị điểm 0 do quên ghi mã đề",
+    "intent": "Thừa nhận lỗi sai quy chế và xin được châm chước chấm lại",
+    "slang_mapping": {
+      "quen": "quên",
+      "ma de": "mã đề thi",
+      "bi 0 diem": "bị điểm 0",
+      "cuu e": "giúp em với"
+    },
+    "input": "thay oi chet e r, e quen to ma de nen bi 0 diem, thay tim bai cham lai giup e dc k, cuu e",
+    "reasoning": "Input thể hiện sự hoảng loạn ('chết em rồi', 'cứu em'). Cần loại bỏ cảm xúc cá nhân, tập trung vào việc nhận lỗi sai sót kỹ thuật và khẩn khoản xin sự khoan hồng.",
+    "target": "Kính gửi Thầy, em xin lỗi vì sơ suất quên tô mã đề trong bài thi vừa rồi, dẫn đến việc bài không được chấm điểm. Em mong Thầy thông cảm và tạo điều kiện tìm lại bài thi để chấm giúp em ạ."
+  },
+  {
+    "id": 7,
+    "context": "Sinh viên thấy điểm thấp nhưng không rõ lý do",
+    "intent": "Xin lịch hẹn để xem lại bài thi trực tiếp",
+    "slang_mapping": {
+      "xem lai bai": "xem lại bài thi",
+      "k hieu": "không hiểu",
+      "tru o dau": "trừ điểm ở đâu",
+      "gap thay": "gặp Thầy"
+    },
+    "input": "thay cho e xem lai bai dc k, e k hieu sao thap vay, k biet bi tru o dau, khi nao e gap thay dc",
+    "reasoning": "Câu input thiếu kính ngữ và sắp xếp lộn xộn. Cần cấu trúc lại thành một lời đề nghị xin lịch hẹn gặp mặt để trao đổi chuyên môn.",
+    "target": "Em chào Thầy, em cảm thấy kết quả bài thi chưa phản ánh đúng lực học của mình. Em xin phép được hẹn gặp Thầy để xem lại bài thi và nghe Thầy chỉ ra những lỗi sai để em rút kinh nghiệm ạ."
+  },
+  {
+    "id": 8,
+    "context": "Sinh viên gửi email phúc khảo đã lâu chưa thấy phản hồi",
+    "intent": "Nhắc nhở giảng viên một cách khéo léo về yêu cầu trước đó",
+    "slang_mapping": {
+      "gui mail": "gửi email",
+      "lau r": "lâu rồi",
+      "chua thay rep": "chưa thấy trả lời",
+      "troi tin": "trôi tin nhắn"
+    },
+    "input": "thay oi e gui mail phuc khao lau r ma chua thay rep, so thay troi tin nen e nhan zalo, thay check nha",
+    "reasoning": "Dùng từ 'rep', 'trôi tin', 'check nha' là ngôn ngữ mạng xã hội. Cần chuyển sang văn phong email nhắc việc (follow-up) lịch sự, tránh gây áp lực cho giảng viên.",
+    "target": "Thưa Thầy, em đã gửi email xin phúc khảo bài thi cách đây vài ngày nhưng chưa nhận được phản hồi. Em sợ email bị thất lạc nên xin phép nhắn tin để mong Thầy kiểm tra lại giúp em ạ."
+  },
+  {
+    "id": 9,
+    "context": "Sinh viên so sánh điểm của mình với bạn khác làm bài tương tự",
+    "intent": "Thắc mắc về sự không nhất quán trong cách chấm (cẩn trọng)",
+    "slang_mapping": {
+      "bai thang ban": "bài bạn cùng lớp",
+      "y chang": "giống hệt",
+      "nó": "bạn ấy",
+      "dc 9": "được 9 điểm"
+    },
+    "input": "sao bai thang ban e lam y chang e ma no dc 9 e co 7 vay thay, thay coi lai chu ky qua",
+    "reasoning": "So sánh thô thiển ('thằng bạn', 'nó') và buộc tội ('kỳ quá') là tối kỵ. Cần diễn đạt khéo léo rằng có sự khác biệt trong cách chấm các bài tương đồng để xin rà soát.",
+    "target": "Thưa Thầy, em có đối chiếu bài làm với một số bạn trong lớp và thấy cách trình bày tương tự nhưng điểm số lại chênh lệch khá nhiều. Em mong Thầy xem lại giúp em xem em có mắc lỗi diễn đạt nào không ạ."
+  },
+  {
+    "id": 10,
+    "context": "Sinh viên muốn xin vớt điểm để qua môn (phúc khảo cảm tính)",
+    "intent": "Xin xỏ nâng điểm vì lý do hoàn cảnh (thường sẽ bị từ chối nhưng vẫn cần viết formal)",
+    "slang_mapping": {
+      "thieu 0.5": "thiếu 0.5 điểm",
+      "qua mon": "qua môn học",
+      "rot": "thi rớt",
+      "cham chuoc": "châm chước"
+    },
+    "input": "thay oi e thieu 0.5 nua la qua mon r, thay cham chuoc nang e len xiu dc k, e k muon hoc lai dau",
+    "reasoning": "Input mang tính xin xỏ cảm tính, mè nheo. Khi chuyển sang formal, cần biến thành yêu cầu phúc khảo xem có thể tìm thêm điểm sót ở đâu không, tránh xin điểm trực tiếp sai quy chế.",
+    "target": "Em chào Thầy, điểm tổng kết của em hiện đang rất sát mức đạt. Em kính mong Thầy xem xét lại bài thi của em một lần nữa xem có phần nào có thể vớt vát thêm điểm số được không ạ. Em cảm ơn Thầy."
+  }
+]
+[
+  {
+    "id": 11,
+    "context": "Sinh viên sốc và bực bội vì bị trượt môn dù tự tin làm bài tốt",
+    "intent": "Thắc mắc gay gắt về kết quả và yêu cầu chấm lại ngay",
+    "slang_mapping": {
+      "tạch": "trượt/rớt môn",
+      "thế quái nào": "làm sao có thể (biểu cảm bực bội)",
+      "ngon ơ": "rất tốt/trôi chảy",
+      "dìm": "chấm đì/chấm chặt"
+    },
+    "input": "thay oi the quai nao e tạch mon nay dc, e lam bai ngon ơ ma sao diem thap vay, thay co dìm e k do, cham lai gium e",
+    "reasoning": "Input chứa cảm xúc tiêu cực mạnh ('thế quái nào', 'dìm'). Cần loại bỏ hoàn toàn sự nghi ngờ thiên kiến của giáo viên, chuyển thành sự ngạc nhiên về kết quả và đề nghị phúc khảo khách quan.",
+    "target": "Thưa Thầy, em rất bất ngờ khi nhận kết quả chưa đạt ở môn học này vì em cảm thấy mình đã làm bài khá tốt. Em kính mong Thầy dành chút thời gian xem lại bài thi giúp em để đảm bảo không có sai sót nào ạ."
+  },
+  {
+    "id": 12,
+    "context": "Sinh viên ấm ức vì người chép bài mình lại có điểm cao hơn",
+    "intent": "Tố cáo sự bất công và đòi lại công bằng (so sánh)",
+    "slang_mapping": {
+      "ngta": "người ta (bạn khác)",
+      "chép": "sao chép bài",
+      "trc": "trước",
+      "cao chót vót": "rất cao"
+    },
+    "input": "ngta chep bai e ngoi ngay ban trc ma diem cao chót vót, con e thi le te, bat cong qua thay, thay coi lai bai e vs bai no di",
+    "reasoning": "Việc tố cáo bạn khác ('người ta chép bài') trong đơn phúc khảo là không chuyên nghiệp và rủi ro. Cần tập trung vào bài làm của bản thân, chỉ đề cập đến việc so sánh bài làm (ẩn danh) để thấy sự bất hợp lý trong điểm số.",
+    "target": "Thưa Thầy, em nhận thấy bài làm của em có nội dung tương đồng với một số bạn đạt điểm cao trong lớp. Em mong Thầy xem xét lại bài của em xem liệu có phần nào em trình bày chưa rõ ý dẫn đến kết quả chênh lệch này không ạ."
+  },
+  {
+    "id": 13,
+    "context": "Hệ thống bị lỗi hiển thị, điểm số bị mất hoặc hiện ký tự lạ",
+    "intent": "Báo cáo lỗi kỹ thuật và lo lắng bị mất điểm",
+    "slang_mapping": {
+      "bùng": "mất/biến mất",
+      "lag": "nghẽn mạng/lỗi",
+      "trắng bóc": "không có gì",
+      "fix": "sửa lỗi"
+    },
+    "input": "web truong bi lag hay sao a, diem e bi bùng mat tieu roi, o diem trang boc ah, thay bao it fix lai giup e",
+    "reasoning": "Input dùng từ lóng IT ('lag', 'fix') và mô tả suồng sã ('trắng bóc'). Cần viết lại thành báo cáo sự cố hệ thống và nhờ giảng viên kiểm tra dữ liệu gốc.",
+    "target": "Em chào Thầy, em vào hệ thống xem điểm thì thấy cột điểm của em bị trống (không hiển thị dữ liệu). Em nhờ Thầy kiểm tra giúp em xem điểm đã được cập nhật chưa hay do lỗi hiển thị ạ."
+  },
+  {
+    "id": 14,
+    "context": "Sinh viên tức giận vì đề thi có câu hỏi "gài bẫy" hoặc không rõ ràng",
+    "intent": "Phản đối đáp án của giảng viên",
+    "slang_mapping": {
+      "lừa": "gây hiểu nhầm",
+      "cay": "bực mình",
+      "hack não": "rối rắm/khó hiểu",
+      "bắt bẻ": "soi mói lỗi nhỏ"
+    },
+    "input": "cau 3 de lừa tình qua thay oi, doc hack não muon chet, e hieu y dung ma thay bat be cau chu roi tru diem, cay qua",
+    "reasoning": "Thái độ 'cay cú' và dùng từ 'lừa tình', 'hack não' không phù hợp. Cần trình bày lại quan điểm học thuật: đề bài có thể gây hiểu nhầm và cách hiểu của sinh viên là hợp lý trong ngữ cảnh đó.",
+    "target": "Thưa Thầy, ở câu hỏi số 3, em thấy cách diễn đạt của đề bài có thể hiểu theo hai hướng. Em đã làm theo cách hiểu thứ nhất và mong Thầy xem xét lại quan điểm này để châm chước phần điểm bị trừ ạ."
+  },
+  {
+    "id": 15,
+    "context": "Sinh viên đã nhắn tin xin phúc khảo trước đó nhưng bị giáo viên 'bơ' (không trả lời)",
+    "intent": "Nhắc lại yêu cầu với thái độ không hài lòng",
+    "slang_mapping": {
+      "bơ": "lờ đi/không trả lời",
+      "trc": "trước",
+      "chán": "thất vọng",
+      "k thèm": "không chịu"
+    },
+    "input": "e nhan tu tuan trc ma thay bơ e luon, k them rep, chuyen diem so quan trong ma thay lam an chán vay",
+    "reasoning": "Input rất vô lễ ('làm ăn chán vậy', 'k thèm rep'). Cần giữ bình tĩnh, giả định rằng tin nhắn trước bị trôi và xin phép được nhắc lại một cách lịch sự.",
+    "target": "Em xin lỗi vì làm phiền Thầy lần nữa ạ. Tuần trước em có nhắn tin xin phúc khảo nhưng chắc do Thầy bận nên tin nhắn bị trôi. Em xin phép được gửi lại thông tin và mong Thầy kiểm tra giúp em ạ."
+  },
+  {
+    "id": 16,
+    "context": "Sinh viên nghi ngờ giảng viên chấm bài qua loa, chấm đại",
+    "intent": "Chỉ trích cách chấm bài và đòi minh bạch",
+    "slang_mapping": {
+      "ảo": "vô lý",
+      "chấm đại": "chấm qua loa cho xong",
+      "viết sớ": "viết rất dài",
+      "bèo": "thấp"
+    },
+    "input": "cham kieu gi ma ảo vay thay, e viet sớ 3 trang giay dc co 2d bèo nheo, thay chấm đại cho xong ha",
+    "reasoning": "Cáo buộc giảng viên 'chấm đại' là xúc phạm nghiêm trọng. Cần chuyển hướng sang việc thắc mắc vì sao nỗ lực làm bài dài (số lượng) lại không đạt yêu cầu về chất lượng.",
+    "target": "Thưa Thầy, bài thi vừa rồi em đã cố gắng trình bày rất chi tiết và đầy đủ các ý (dài 3 trang). Tuy nhiên điểm số lại thấp hơn mong đợi, em mong Thầy chỉ giúp em những phần em viết lan man hoặc chưa đúng trọng tâm để em rút kinh nghiệm ạ."
+  },
+  {
+    "id": 17,
+    "context": "Sinh viên nộp bài thành công nhưng hệ thống ghi nhận 'không nộp'",
+    "intent": "Kêu oan và chứng minh mình đã nộp bài",
+    "slang_mapping": {
+      "xịt": "hỏng/thất bại",
+      "oan": "bị oan ức",
+      "rõ ràng": "khẳng định chắc chắn",
+      "loi": "lỗi"
+    },
+    "input": "ro rang e nop bai roi ma he thong bao xịt, thay xem lai lich su nop bai di, oan e qua, loi do web chu bo",
+    "reasoning": "Đổ lỗi trực tiếp cho web và dùng từ 'oan quá', 'chứ bộ' nghe rất trẻ con. Cần bình tĩnh cung cấp bằng chứng (nếu có) và nhờ giáo viên kiểm tra log hệ thống.",
+    "target": "Em chào Thầy, em xác nhận là mình đã bấm nộp bài đúng hạn nhưng không hiểu sao hệ thống lại báo chưa nộp. Em nhờ Thầy kiểm tra lại lịch sử nộp bài trên hệ thống giúp em để xác minh ạ."
+  },
+  {
+    "id": 18,
+    "context": "Sự cố mạng khiến bài nộp bị thiếu phần cuối",
+    "intent": "Xin chấm phần bài đã làm được và giải thích lý do khách quan",
+    "slang_mapping": {
+      "toang": "hỏng việc",
+      "rớt mạng": "mất kết nối internet",
+      "đen": "xui xẻo",
+      "submit": "nộp bài"
+    },
+    "input": "dang lam thi rớt mạng den kinh khung, e bi toang mat phan duoi k submit dc, thay cham phan tren thoi dc k",
+    "reasoning": "Than vãn 'đen kinh khủng', 'toang' không giải quyết được vấn đề. Cần trình bày rõ sự cố kỹ thuật bất khả kháng và đề nghị giảng viên xem xét phần bài đã được lưu lại.",
+    "target": "Thưa Thầy, trong quá trình làm bài thi trực tuyến em gặp sự cố mất kết nối mạng nên không kịp nộp phần cuối cùng. Em mong Thầy xem xét và chấm điểm cho những phần em đã hoàn thành trước khi sự cố xảy ra ạ."
+  },
+  {
+    "id": 19,
+    "context": "Chữ viết xấu khiến giảng viên không đọc được và trừ điểm",
+    "intent": "Thừa nhận chữ xấu và xin cơ hội được 'dịch' lại bài",
+    "slang_mapping": {
+      "gà bới": "chữ rất xấu",
+      "thấp tẹt": "rất thấp",
+      "dịch": "đọc/giải mã",
+      "y chang": "đúng như"
+    },
+    "input": "chu e hoi xau nhu gà bới nhung y dung ma thay, sao cho diem thấp tẹt vay, thay goi e len e dịch lai cho ma cham",
+    "reasoning": "Dùng từ 'dịch lại cho mà chấm' rất trịch thượng. Cần nhận lỗi về trình bày kém và xin phép được gặp trực tiếp để đọc lại nội dung bài thi cho giáo viên nghe.",
+    "target": "Thưa Thầy, em biết chữ viết của em hơi khó đọc, có thể đã gây khó khăn cho Thầy khi chấm bài. Em xin phép được gặp Thầy để đọc lại nội dung bài làm của mình, mong Thầy châm chước cho phần trình bày ạ."
+  },
+  {
+    "id": 20,
+    "context": "Nghi ngờ giảng viên vào nhầm điểm (đảo ngược số)",
+    "intent": "Cảnh báo lỗi nhập liệu sai sót",
+    "slang_mapping": {
+      "lộn": "nhầm lẫn",
+      "đảo": "ngược lại",
+      "ngáo": "ngớ ngẩn (cực kỳ thô lỗ, ngữ cảnh này nhẹ hơn là nhầm lẫn)",
+      "sửa gấp": "sửa ngay"
+    },
+    "input": "diem e hinh nhu bi dao lộn so roi thay, 8.5 thanh 5.8, thay xem lai gap chu e so bi chốt sổ diem",
+    "reasoning": "Dùng từ 'chốt sổ', 'đảo lộn' là văn nói. Cần chỉ ra cụ thể sự sai lệch logic (8.5 vs 5.8) và đề nghị kiểm tra lại quá trình nhập điểm.",
+    "target": "Em chào Thầy, em thấy điểm tổng kết của em là 5.8, nhưng em tính toán các cột điểm thành phần thì phải là 8.5. Em e là có sự nhầm lẫn khi nhập liệu (đảo ngược số), mong Thầy kiểm tra lại giúp em ạ."
+  }
+]
+[
+  {
+    "id": 21,
+    "context": "Sinh viên nhắn tin cộc lốc yêu cầu xem lại điểm mà không nêu lý do",
+    "intent": "Yêu cầu giảng viên rà soát lại kết quả thi",
+    "slang_mapping": {
+      "coi lai": "xem lại/kiểm tra lại",
+      "diem e": "điểm của em"
+    },
+    "input": "thay coi lai diem e.",
+    "reasoning": "Input là một câu mệnh lệnh cộc lốc, thiếu chủ ngữ và kính ngữ. Cần bổ sung ngữ cảnh là sinh viên vừa nhận điểm và muốn nhờ thầy kiểm tra lại xem có sai sót gì không.",
+    "target": "Em chào Thầy, em vừa xem kết quả thi và thấy điểm số chưa phản ánh đúng bài làm của mình. Em mong Thầy dành chút thời gian xem lại bài thi giúp em ạ."
+  },
+  {
+    "id": 22,
+    "context": "Sinh viên thắc mắc lý do bị rớt môn nhưng hỏi rất trống không",
+    "intent": "Hỏi lý do cụ thể khiến bài thi không đạt",
+    "slang_mapping": {
+      "sao": "tại sao",
+      "rớt": "trượt/không qua môn",
+      "v": "vậy"
+    },
+    "input": "sao e rớt v thay.",
+    "reasoning": "Câu hỏi 'sao em rớt vậy' quá suồng sã với giảng viên. Cần chuyển thành một lời thắc mắc cầu thị, mong muốn được biết những lỗi sai lớn trong bài để rút kinh nghiệm.",
+    "target": "Thưa Thầy, em rất tiếc khi biết mình không qua được môn học này. Thầy có thể cho em biết em đã mắc những lỗi nghiêm trọng nào trong bài thi để em rút kinh nghiệm cho lần học sau được không ạ?"
+  },
+  {
+    "id": 23,
+    "context": "Sinh viên khẳng định một câu cụ thể bị chấm sai nhưng nói rất ngắn",
+    "intent": "Phản hồi về việc chấm sai đáp án",
+    "slang_mapping": {
+      "cau 4": "câu hỏi số 4",
+      "sai r": "bị sai rồi/chấm sai rồi"
+    },
+    "input": "cau 4 cham sai r thay.",
+    "reasoning": "Input mang tính buộc tội ('sai rồi'). Cần diễn giải lại thành sự băn khoăn về đáp án của câu 4 và xin giảng viên giải thích lại tiêu chí chấm.",
+    "target": "Thưa Thầy, em có thắc mắc về kết quả chấm của câu số 4. Theo em tìm hiểu thì đáp án em làm là chính xác, em mong Thầy xem lại giúp em phần này ạ."
+  },
+  {
+    "id": 24,
+    "context": "Sinh viên thông báo đã nộp bài khi hệ thống báo thiếu",
+    "intent": "Xác nhận lại việc nộp bài",
+    "slang_mapping": {
+      "nop r": "nộp rồi",
+      "ma": "mà (từ đệm nhấn mạnh)"
+    },
+    "input": "e nop r ma.",
+    "reasoning": "Câu 'em nộp rồi mà' nghe như đang cãi nhau. Cần viết lại thành câu trần thuật xác nhận thời điểm đã nộp và nhờ kiểm tra lại hệ thống.",
+    "target": "Em chào Thầy, em xin xác nhận là em đã hoàn thành và nộp bài lên hệ thống đúng hạn. Có thể do lỗi kỹ thuật nên bài chưa hiện, nhờ Thầy kiểm tra lại giúp em ạ."
+  },
+  {
+    "id": 25,
+    "context": "Sinh viên hỏi cụt lủn về thời gian phúc khảo",
+    "intent": "Hỏi thông tin về lịch trình phúc khảo",
+    "slang_mapping": {
+      "bao h": "bao giờ/khi nào",
+      "pk": "phúc khảo"
+    },
+    "input": "bao h pk vay thay.",
+    "reasoning": "Câu hỏi thiếu chủ ngữ và viết tắt quá mức. Cần bổ sung ngữ cảnh xin thông tin chính thức về thời gian và địa điểm nộp đơn phúc khảo.",
+    "target": "Thưa Thầy, Thầy cho em hỏi lịch nhận đơn phúc khảo của môn này bắt đầu từ khi nào và quy trình nộp như thế nào ạ?"
+  },
+  {
+    "id": 26,
+    "context": "Sinh viên xin thêm điểm rất ít để đủ điều kiện qua môn/nâng loại",
+    "intent": "Xin xem xét lại để vớt vát điểm số",
+    "slang_mapping": {
+      "cho e": "cho em xin",
+      "them": "cộng thêm",
+      "dc k": "được không"
+    },
+    "input": "cho e them 0.2 dc k.",
+    "reasoning": "Xin điểm trực tiếp ('cho em thêm') là sai quy chế và thiếu tế nhị. Cần chuyển thành đề nghị phúc khảo để xem có sót điểm thành phần nào có thể cộng thêm không.",
+    "target": "Thưa Thầy, điểm tổng kết của em hiện đang thiếu 0.2 nữa là đạt mức B. Em mong Thầy xem xét lại bài thi xem có phần nào có thể châm chước thêm điểm cho em được không ạ."
+  },
+  {
+    "id": 27,
+    "context": "Sinh viên phản đối khi bị điểm 0 do nghi ngờ quay cóp",
+    "intent": "Thanh minh về sự trung thực trong thi cử",
+    "slang_mapping": {
+      "dau co": "đâu có/không có",
+      "chep": "chép bài/quay cóp"
+    },
+    "input": "e dau co chep dau.",
+    "reasoning": "Câu chối tội cộc lốc 'em đâu có chép đâu' không có sức thuyết phục. Cần viết thành thư giải trình, khẳng định tự làm bài và sẵn sàng đối chất/kiểm tra vấn đáp.",
+    "target": "Thưa Thầy, em nhận thấy bài của mình bị điểm 0 với lý do sao chép. Em xin khẳng định em tự làm bài hoàn toàn và xin phép được gặp Thầy để giải trình hoặc kiểm tra vấn đáp chứng minh kiến thức ạ."
+  },
+  {
+    "id": 28,
+    "context": "Sinh viên thắc mắc vì không thấy cột điểm quá trình",
+    "intent": "Hỏi về điểm thành phần bị thiếu",
+    "slang_mapping": {
+      "k co": "không có/chưa có",
+      "diem qt": "điểm quá trình"
+    },
+    "input": "k co diem qt thay oi.",
+    "reasoning": "Input chỉ là một câu thông báo trạng thái thiếu thông tin. Cần chuyển thành câu hỏi lịch sự nhờ giảng viên cập nhật hoặc kiểm tra lại cột điểm này.",
+    "target": "Em chào Thầy, em vào xem bảng điểm thì thấy cột điểm quá trình của em vẫn đang để trống. Thầy cho em hỏi là điểm chưa cập nhật hay bị sót tên em ạ?"
+  },
+  {
+    "id": 29,
+    "context": "Sinh viên thấy điểm lạ (quá cao hoặc quá thấp bất thường)",
+    "intent": "Bày tỏ sự nghi ngờ về độ chính xác của điểm số",
+    "slang_mapping": {
+      "diem": "điểm số",
+      "ki v": "kỳ vậy/kỳ lạ vậy"
+    },
+    "input": "diem ki v thay.",
+    "reasoning": "Câu cảm thán 'điểm kỳ vậy' không rõ ý. Cần diễn giải thành sự bối rối trước kết quả nhận được và mong muốn được giải thích rõ hơn.",
+    "target": "Thưa Thầy, em thấy kết quả điểm thi vừa công bố có chút bất thường so với dự đoán của em. Em mong Thầy xem lại giúp em xem có sự nhầm lẫn nào trong khâu nhập điểm không ạ."
+  },
+  {
+    "id": 30,
+    "context": "Sinh viên hỏi xem thầy đã chấm bài phúc khảo chưa (hối thúc)",
+    "intent": "Nhắc nhở giảng viên về tiến độ chấm phúc khảo",
+    "slang_mapping": {
+      "cham": "chấm bài",
+      "chua": "xong chưa"
+    },
+    "input": "thay cham chua a.",
+    "reasoning": "Hỏi 'thầy chấm chưa' rất thiếu kiên nhẫn. Cần viết lại thành câu hỏi thăm dò tiến độ nhẹ nhàng, thể hiện sự lo lắng về kết quả cuối cùng.",
+    "target": "Em chào Thầy, em xin lỗi vì làm phiền ạ. Thầy cho em hỏi là đã có kết quả chấm phúc khảo chưa ạ? Em đang rất lo lắng nên mong tin từ Thầy."
+  }
+]
