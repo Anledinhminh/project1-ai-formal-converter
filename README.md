@@ -144,8 +144,9 @@ project1-ai-formal-converter/
 
 ## 👨‍💻 Author
 
-**Le Dinh Minh An **
-**Project:** AI for Formal Language
-**Role:** Full-stack AI Engineer
+Le Dinh Minh An 
+
+Project: AI for Formal Language
+Role: Full-stack AI Engineer
 
 
